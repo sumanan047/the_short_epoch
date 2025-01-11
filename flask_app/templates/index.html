@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask App</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>    
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">The Short Epoch Title</a>
+        </nav>
+    <!-- Main Content -->
+    <div class="container mt-5">
+        <div class="jumbotron">
+            <h1>Hello, Flask!</h1>
+            <p>This is a simple Flask application.</p>
+            <button class="btn btn-primary" onclick="myFunction()">Click me</button>
+        </div>
+    </div>    
+    <!-- Script -->
+    <script src="{{ url_for('static', filename='script.js') }}"></script> 
+</body>
+</html>
