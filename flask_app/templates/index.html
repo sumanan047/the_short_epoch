@@ -4,26 +4,113 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TSE</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="shortcut icon"  href="{{ url_for('static', filename='images/theshortepochlogo.ico') }}">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
-<body>    
+
+
+<body>
     <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-nav">
         <a class="navbar-brand" href="#">
             <img src="{{ url_for('static', filename='images/theshortepochlogo.png') }}" alt="The Short Epoch Logo" width="30" height="30" class="d-inline-block align-text-top">
             The Short Epoch</a>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Articles</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Books</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Software</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Courses</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-sm-0 ml-auto" style="text-align: right;">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search the website" aria-label="Search">
+                <button class="btn btn-outline-primary my-2 my-lg-0" type="submit"><i class="fas fa-search"></i></button>
+            </form>
+        </div>
     </nav>
+    <!-- Navigation Bar Ends -->
+
     <!-- Main Content -->
     <div class="container mt-5">
-        <div class="jumbotron">
-            <h1>The Short Epoch</h1>
-            <p>This is a simple Flask application.</p>
-            <button class="btn btn-primary" onclick="myFunction()">Click me</button>
+        <div class="row">
+            <!-- first column -->
+            <div class="col-md-3">
+                <!-- first card -->
+                <div class="card mb-4">
+                    <img src="{{ url_for('static', filename='images/theshortepochlogo.png') }}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+                <!-- first card ends -->
+                <!-- second card -->
+                <div class="card mb-4">
+                    <img src="{{ url_for('static', filename='images/theshortepochlogo.png') }}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+                <!-- second card ends -->
+            </div>
+            <!-- first columns ends -->
+            <!-- second column -->
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <img src="{{ url_for('static', filename='images/theshortepochlogo.png') }}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                </div>
+            </div>
+            <!-- second column ends -->
+            <!-- third column -->
+            <div class="col-md-3">
+                <div class="card mb-4">
+                    <img src="{{ url_for('static', filename='images/theshortepochlogo.png') }}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <!-- third column ends -->
         </div>
-    </div>    
+    </div>
+    <!-- Main Content Ends  -->
+
+    <!-- Footer -->
+    <footer class="footer container-fluid">
+        <div class="container-fluid">
+            <span class="text-muted">© 2025 The Short Epoch. All rights reserved.</span>
+            <ul class="list-inline float-right">
+                <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+                <li class="list-inline-item"><a href="#">Terms of Service</a></li>
+                <li class="list-inline-item"><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+    </footer>
+    <!-- Footer Ends -->
+
     <!-- Script -->
     <script src="{{ url_for('static', filename='script.js') }}"></script> 
 </body>
+
+
 </html>

@@ -1,3 +1,17 @@
 body {
     padding-top: 0px;
 }
+
+.bg-nav {
+    background-color: #BFBFFF;
+}
+
+.navbar .btn-outline-primary {
+    background-color: #BFBFFF;
+    border-color: #BFBFFF;
+    color: #000000;
+}
+
+.float-right {
+    float: right;
+}
